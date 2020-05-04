@@ -1,3 +1,4 @@
 train.csv
 .idea/
-.ipynb_checkpoints/
+/.ipynb_checkpoints/
+/venv/
