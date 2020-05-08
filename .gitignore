@@ -2,3 +2,4 @@ train.csv
 .idea/
 /.ipynb_checkpoints/
 /venv/
+test.csv
