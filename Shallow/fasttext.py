@@ -15,6 +15,7 @@ for i in train['text'].values:
 model = FastText(corpus, size=100, workers=4, window=5)
 
 
-print(model.wv.most_similar('bad'))
+print(model.wv.most_similar('positive'))
 print('******')
-print(model.wv.most_similar('good'))
+print(model.wv.most_similar('negative'))
+print(model.wv.most_similar('neutral'))
