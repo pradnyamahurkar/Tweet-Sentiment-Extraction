@@ -234,10 +234,6 @@ def findBestHyper(Xtilde, y, vocab, tweet_va, select_va, sent_va):
                     # Record results for this HP set
                     results[i] = np.array((*hp, score))
                     i += 1
-                    break
-                break
-            break
-        break
     
     # Output hyperparameter testing results to CSV
     headers = 'Epsilon, Batch Size, Epochs, Alpha, Jaccard'
