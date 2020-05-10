@@ -92,4 +92,4 @@ if __name__ == '__main__':
     train['text'] = train['text'].apply(lambda x: cleanText(x))
 
     #Check the most common words across the cleaned tweets
-    wordcloud(train=train, text = 'selected_text')
+    wordcloud(train=train, text = 'text')
