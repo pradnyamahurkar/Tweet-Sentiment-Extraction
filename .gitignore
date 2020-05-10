@@ -3,3 +3,5 @@ train.csv
 /.ipynb_checkpoints/
 /venv/
 test.csv
+submission.csv
+sample_submission.csv
