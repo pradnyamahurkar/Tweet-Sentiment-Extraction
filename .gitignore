@@ -5,3 +5,7 @@ train.csv
 test.csv
 submission.csv
 sample_submission.csv
+
+# Data directories 
+input/
+output/
