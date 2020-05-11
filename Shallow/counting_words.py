@@ -143,7 +143,7 @@ for index, row in X_te.iterrows():
     selected_text = calculate_selected_text(row, tol)
     X_te.loc[X_te['textID'] == row['textID'], ['selected_text']] = selected_text
 
-X_te.drop(columns=['text', 'sentiment'])
+X_te = X_te.drop(columns=['text', 'sentiment'])
 
 X_te.to_csv("submission.csv", index=False)
 X_te.sample(10)
