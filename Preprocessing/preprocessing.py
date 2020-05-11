@@ -10,7 +10,7 @@ import seaborn as sns
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 
 #Load the data in
-def loadData(fp="../train.csv"):
+def loadData(fp="../test.csv"):
     train = pd.read_csv(fp)
     return train
 
