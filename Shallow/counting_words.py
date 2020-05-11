@@ -137,11 +137,13 @@ X_test['jaccard'] = X_test.apply(lambda x: jaccard(x['selected_text'], x['predic
 print('The jaccard score for the validation set is:', np.mean(X_test['jaccard']))
 
 # test set
-X_te['predicted_selection'] = ''
+X_te['selected_text'] = ''
 
 for index, row in X_te.iterrows():
     selected_text = calculate_selected_text(row, tol)
-    X_te.loc[X_te['textID'] == row['textID'], ['predicted_selection']] = selected_text
+    X_te.loc[X_te['textID'] == row['textID'], ['selected_text']] = selected_text
+
+X_te.drop(columns=['text', 'sentiment'])
 
 X_te.to_csv("submission.csv", index=False)
 X_te.sample(10)
