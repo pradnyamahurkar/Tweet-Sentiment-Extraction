@@ -79,7 +79,7 @@ def wordcloud(train, text='text'):
                           max_words=100,
                           background_color="white").generate(corpus)
 
-    plt.figure(figsize=(15, 15))
+    plt.figure(figsize=(30, 30))
     plt.imshow(wordcloud, interpolation="bilinear")
     plt.axis("off")
     plt.show()
