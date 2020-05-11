@@ -14,5 +14,5 @@ Tweet sentiment extraction NLP challenge as per https://www.kaggle.com/c/tweet-s
 	Could probably integrate hyperparameter optimization with this model to make it more fine-tuned for the data but either would take too much time or is too challenging given the limited amount of time left 
 
 
-##Manual work on optimization
-Different loss function - categorical cross entropy is awful for this -- loss of 35-40
+## Manual work on optimization results
+	Different loss function - categorical cross entropy is awful for this -- loss of 35-40
